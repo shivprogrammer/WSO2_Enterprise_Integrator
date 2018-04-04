@@ -2,4 +2,7 @@
     <artifact name="PizzashopEndpoint" groupId="com.wso2.training.PizzaShopProject.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/PizzashopEndpoint.xml</file>
     </artifact>
+    <artifact name="PizzaAdmin" groupId="com.wso2.training.PizzaShopProject.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/PizzaAdmin.xml</file>
+    </artifact>
 </artifacts>
