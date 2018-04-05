@@ -8,4 +8,7 @@
     <artifact name="pizzashop" groupId="com.wso2.training.PizzaShopProject.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/api/pizzashop.xml</file>
     </artifact>
+    <artifact name="PizzaMenuEndpoint" groupId="com.wso2.training.PizzaShopProject.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PizzaMenuEndpoint.xml</file>
+    </artifact>
 </artifacts>
