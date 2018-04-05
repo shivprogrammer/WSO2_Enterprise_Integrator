@@ -11,7 +11,9 @@
                 </args>
             </payloadFactory>
             <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
-            <send/>
+            <send>
+                <endpoint key="PizzashopEndpoint"/>
+            </send>
         </inSequence>
         <outSequence/>
         <faultSequence/>
