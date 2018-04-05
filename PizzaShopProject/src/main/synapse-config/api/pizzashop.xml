@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <api context="/pizzashop" name="pizzashop" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET" uri-template="/api/order/{orderid}">
-        <inSequence/>
+        <inSequence>
+            <send>
+                <endpoint key="PizzaMenuEndpoint"/>
+            </send>
+        </inSequence>
         <outSequence/>
         <faultSequence/>
     </resource>
