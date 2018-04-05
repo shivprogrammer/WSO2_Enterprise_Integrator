@@ -6,7 +6,9 @@
                 <endpoint key="PizzaMenuEndpoint"/>
             </send>
         </inSequence>
-        <outSequence/>
+        <outSequence>
+            <send/>
+        </outSequence>
         <faultSequence/>
     </resource>
 </api>
