@@ -2,11 +2,13 @@
 <proxy name="PizzaAdmin" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target>
         <inSequence>
-            <payloadFactory media-type="xml">
-                <format>
-                    <inline xmlns=""/>
-                </format>
-                <args/>
+            <payloadFactory media-type="json">
+                <format>{"pizza": {"name": "$1", "price": $2, "topping": $3}}</format>
+                <args>
+                    <arg evaluator="xml" expression="//pizza/name"/>
+                    <arg evaluator="xml" expression="//pizza/price"/>
+                    <arg evaluator="json" expression="pizza.toppings.topping"/>
+                </args>
             </payloadFactory>
         </inSequence>
         <outSequence/>
