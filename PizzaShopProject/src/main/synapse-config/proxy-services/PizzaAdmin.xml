@@ -10,6 +10,7 @@
                     <arg evaluator="json" expression="pizza.toppings.topping"/>
                 </args>
             </payloadFactory>
+            <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
         </inSequence>
         <outSequence/>
         <faultSequence/>
