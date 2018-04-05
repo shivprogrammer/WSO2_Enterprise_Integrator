@@ -15,7 +15,9 @@
                 <endpoint key="PizzashopEndpoint"/>
             </send>
         </inSequence>
-        <outSequence/>
+        <outSequence>
+            <send/>
+        </outSequence>
         <faultSequence/>
     </target>
 </proxy>
