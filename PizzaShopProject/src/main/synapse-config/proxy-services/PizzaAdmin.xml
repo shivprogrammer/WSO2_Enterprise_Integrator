@@ -11,6 +11,7 @@
                 </args>
             </payloadFactory>
             <property name="messageType" scope="axis2" type="STRING" value="application/json"/>
+            <send/>
         </inSequence>
         <outSequence/>
         <faultSequence/>
