@@ -2,6 +2,6 @@
 <inboundEndpoint name="PizzaShackInboundEndpoint" protocol="http" suspend="false" xmlns="http://ws.apache.org/ns/synapse">
     <parameters>
         <parameter name="inbound.http.port">8285</parameter>
-        <parameter name="dispatch.filter.pattern">/pizzashop/api/order</parameter>
+        <parameter name="dispatch.filter.pattern">/pizzashop/api/order.*</parameter>
     </parameters>
 </inboundEndpoint>
