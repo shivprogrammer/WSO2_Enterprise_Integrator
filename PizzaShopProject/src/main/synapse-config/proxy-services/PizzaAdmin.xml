@@ -22,6 +22,7 @@
                 </format>
                 <args/>
             </payloadFactory>
+            <property name="messageType" scope="default" type="STRING" value="value"/>
             <send/>
         </outSequence>
         <faultSequence/>
