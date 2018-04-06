@@ -12,7 +12,6 @@
     <com.wso2.training.PizzaShopProject.endpoint_._PizzaMenuEndpoint>capp/EnterpriseServiceBus</com.wso2.training.PizzaShopProject.endpoint_._PizzaMenuEndpoint>
     <com.wso2.training.PizzaShopProject.proxy-service_._PizzaAdmin>capp/EnterpriseServiceBus</com.wso2.training.PizzaShopProject.proxy-service_._PizzaAdmin>
     <com.wso2.training.PizzaShopProject.endpoint_._PizzashopEndpoint>capp/EnterpriseServiceBus</com.wso2.training.PizzaShopProject.endpoint_._PizzashopEndpoint>
-    <com.wso2.training.PizzaShopProject.inbound-endpoint_._PizzaShackInboundEndpoint>capp/EnterpriseServiceBus</com.wso2.training.PizzaShopProject.inbound-endpoint_._PizzaShackInboundEndpoint>
     <com.wso2.training.PizzaShopProject.api_._pizzashop>capp/EnterpriseServiceBus</com.wso2.training.PizzaShopProject.api_._pizzashop>
     <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
   </properties>
@@ -38,12 +37,6 @@
     <dependency>
       <groupId>com.wso2.training.PizzaShopProject.api</groupId>
       <artifactId>pizzashop</artifactId>
-      <version>1.0.0</version>
-      <type>xml</type>
-    </dependency>
-    <dependency>
-      <groupId>com.wso2.training.PizzaShopProject.inbound-endpoint</groupId>
-      <artifactId>PizzaShackInboundEndpoint</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
