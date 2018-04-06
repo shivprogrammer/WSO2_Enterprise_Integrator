@@ -18,11 +18,15 @@
         <outSequence>
             <payloadFactory media-type="xml">
                 <format>
-                    <inline xmlns=""/>
+                    <pizza xmlns="">
+                    $1
+                    </pizza>
                 </format>
-                <args/>
+                <args>
+                    <arg evaluator="json" expression="$.pizza"/>
+                </args>
             </payloadFactory>
-            <property name="messageType" scope="default" type="STRING" value="value"/>
+            <property name="messageType" scope="axis2" type="STRING" value="text/xml"/>
             <send/>
         </outSequence>
         <faultSequence/>
