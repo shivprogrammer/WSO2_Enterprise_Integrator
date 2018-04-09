@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proxy name="FileConnector_Read" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
     <target>
-        <inSequence/>
+        <inSequence>
+            <property expression="json-eval($.source)" name="source" scope="default" type="STRING"/>
+        </inSequence>
         <outSequence/>
         <faultSequence/>
     </target>
