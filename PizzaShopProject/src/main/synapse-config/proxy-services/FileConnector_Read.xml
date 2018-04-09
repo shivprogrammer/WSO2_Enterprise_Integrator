@@ -6,6 +6,12 @@
             <property expression="json-eval($.contentType)" name="inputContent" scope="default" type="STRING"/>
             <property expression="json-eval($.start)" name="start" scope="default" type="STRING"/>
             <property expression="json-eval($.end)" name="end" scope="default" type="STRING"/>
+            <fileconnector.readSpecifiedLines>
+                <source>{$ctx:source}</source>
+                <contentType>{$ctx:contentType}</contentType>
+                <start>{$ctx:start}</start>
+                <end>{$ctx:end}</end>
+            </fileconnector.readSpecifiedLines>
         </inSequence>
         <outSequence/>
         <faultSequence/>
