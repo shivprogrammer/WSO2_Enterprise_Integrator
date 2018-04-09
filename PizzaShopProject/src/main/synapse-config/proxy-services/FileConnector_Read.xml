@@ -3,6 +3,7 @@
     <target>
         <inSequence>
             <property expression="json-eval($.source)" name="source" scope="default" type="STRING"/>
+            <property expression="json-eval($.contentType)" name="inputContent" scope="default" type="STRING"/>
         </inSequence>
         <outSequence/>
         <faultSequence/>
