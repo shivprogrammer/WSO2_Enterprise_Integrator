@@ -12,6 +12,7 @@
                 <start>{$ctx:start}</start>
                 <end>{$ctx:end}</end>
             </fileconnector.readSpecifiedLines>
+            <respond/>
         </inSequence>
         <outSequence/>
         <faultSequence/>
