@@ -5,6 +5,7 @@
             <property expression="json-eval($.source)" name="source" scope="default" type="STRING"/>
             <property expression="json-eval($.contentType)" name="inputContent" scope="default" type="STRING"/>
             <property expression="json-eval($.start)" name="start" scope="default" type="STRING"/>
+            <property expression="json-eval($.end)" name="end" scope="default" type="STRING"/>
         </inSequence>
         <outSequence/>
         <faultSequence/>
